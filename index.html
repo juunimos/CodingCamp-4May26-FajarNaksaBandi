@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List Life Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <main class="dashboard-grid">
+
+      <!-- Greeting Widget -->
+      <section id="greeting-widget" class="widget">
+        <h2 id="greeting-text">Good Morning</h2>
+        <p id="greeting-time">00:00</p>
+        <p id="greeting-date">Monday, 1 January 2025</p>
+      </section>
+
+      <!-- Focus Timer Widget -->
+      <section id="timer-widget" class="widget">
+        <h2>Focus Timer</h2>
+        <p id="timer-display">25:00</p>
+        <div class="timer-controls">
+          <button id="btn-start" type="button">Start</button>
+          <button id="btn-stop" type="button">Stop</button>
+          <button id="btn-reset" type="button">Reset</button>
+        </div>
+      </section>
+
+      <!-- Todo List Widget -->
+      <section id="todo-widget" class="widget">
+        <h2>Todo List</h2>
+        <form id="task-form" novalidate>
+          <input
+            id="task-input"
+            type="text"
+            placeholder="Add a new task…"
+            autocomplete="off"
+            aria-label="New task title"
+          />
+          <button type="submit">Add</button>
+        </form>
+        <ul id="task-list" aria-label="Task list"></ul>
+      </section>
+
+      <!-- Quick Links Widget -->
+      <section id="links-widget" class="widget">
+        <h2>Quick Links</h2>
+        <form id="link-form" novalidate>
+          <input
+            id="link-label"
+            type="text"
+            placeholder="Label"
+            autocomplete="off"
+            aria-label="Link label"
+          />
+          <input
+            id="link-url"
+            type="text"
+            placeholder="URL"
+            autocomplete="off"
+            aria-label="Link URL"
+          />
+          <button type="submit">Add</button>
+        </form>
+        <div id="links-list" aria-label="Quick links"></div>
+      </section>
+
+    </main>
+  </body>
+</html>
